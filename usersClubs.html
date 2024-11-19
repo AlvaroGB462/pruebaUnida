@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Usuarios y Clubes</title>
+    <link rel="stylesheet" href="styleUsersClubs.css" />
+    <link rel="stylesheet" href="cl-icon/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Botones de selección en la parte superior -->
+        <div id="buttons-container" class="buttons-container">
+            <button id="usersButton" class="submit" onclick="mostrarUsuarios()">
+                Usuarios
+            </button>
+            <button id="clubsButton" class="submit" onclick="mostrarClubes()">
+                Clubes
+            </button>
+        </div>
+
+        <!-- Sección de Usuarios -->
+        <div id="users-section" class="section" style="display: none">
+            <h2>Lista de Usuarios Normales</h2>
+            <ul id="lista-usuarios-normales" class="user-list"></ul>
+
+            <h2>Lista de Usuarios Administradores</h2>
+            <ul id="lista-usuarios-administradores" class="user-list"></ul>
+
+            <div class="button-container">
+                <button id="addUserButton" class="submit" onclick="mostrarFormulario()">
+                    Añadir Usuario
+                </button>
+            </div>
+        </div>
+
+        <!-- Formulario para agregar/modificar usuario (emergente) -->
+        <div id="user-form" class="form-container" style="display: none;">
+            <h1 id="form-title" class="form-title">Registrar Usuario</h1>
+            <div class="inp">
+                <input type="text" id="nick_user" class="input" placeholder="Usuario">
+            </div>
+            <div class="inp">
+                <input type="text" id="name_user" class="input" placeholder="Nombre">
+            </div>
+            <div class="inp">
+                <input type="password" id="password_user" class="input" placeholder="Contraseña">
+            </div>
+            <div class="inp">
+                <input type="text" id="dni_user" class="input" placeholder="DNI">
+            </div>
+            <div class="inp">
+                <input type="email" id="email_user" class="input" placeholder="Correo">
+            </div>
+            <div class="inp">
+                <input type="text" id="address_user" class="input" placeholder="Dirección">
+            </div>
+            <div id="admin_checkbox">
+                <input type="checkbox" id="admin" name="admin">
+                <label for="admin">Administrador</label>
+            </div>
+            <!-- Botones de Guardar y Cancelar -->
+            <div class="form-buttons">
+                <button type="button" onclick="guardarUsuario()" class="submit">Guardar Usuario</button>
+                <button type="button" onclick="cerrarFormulario()" class="submit cancel-btn">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- Sección de Clubes -->
+        <div id="clubs-section" class="section" style="display: none;">
+            <h2>Lista de Clubes</h2>
+            <ul id="lista-clubes" class="user-list"></ul>
+
+            <div class="button-container">
+                <button id="addClubButton" class="submit" onclick="mostrarFormularioClub()">
+                    Añadir Club
+                </button>
+            </div>
+        </div>
+
+        <!-- Formulario para agregar/modificar club (emergente) -->
+        <div id="club-form" class="form-container" style="display: none;">
+            <h1 id="form-title-club" class="form-title">Registrar Club</h1>
+            <div class="inp">
+                <input type="text" id="name_club" class="input" placeholder="Nombre del Club">
+            </div>
+            <div class="inp">
+                <input type="text" id="main_headquarters" class="input" placeholder="Sede Principal">
+            </div>
+            <div class="inp">
+                <input type="date" id="creation_date" class="input">
+            </div>
+            <div class="inp">
+                <input type="text" id="img_user" class="input" placeholder="Imagen del Club">
+            </div>
+            <div class="form-buttons">
+                <button type="button" onclick="guardarClub()" class="submit">Guardar Club</button>
+                <button type="button" onclick="cerrarFormularioClub()" class="submit cancel-btn">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- Aquí mostrarás la lista de usuarios por club -->
+        <div id="club-users-section" class="section" style="display: none;">
+            <h2>Usuarios de este Club</h2>
+            <ul id="lista-usuarios-club" class="user-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+{
+  "clubs": [
+    {
+      "id_club": 1,
+      "name_club": "Club Deportivo A",
+      "main_headquarters": "Calle Falsa 123, Ciudad A",
+      "creation_date": "2022-03-10",
+      "img_user": "url_de_imagen_club_a",
+      "id": "60f2"
+    },
+    {
+      "id_club": 2,
+      "name_club": "Club Deportivo B",
+      "main_headquarters": "Calle Real 456, Ciudad B",
+      "creation_date": "2021-05-15",
+      "img_user": "url_de_imagen_club_b",
+      "id": "1ae7"
+    },
+    {
+      "id_club": 3,
+      "name_club": "Club Deportivo C",
+      "main_headquarters": "Avenida Central 789, Ciudad C",
+      "creation_date": "2023-01-01",
+      "img_user": "url_de_imagen_club_c",
+      "id": "823f"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "5784",
+      "nick_user": "AlvaroGB462",
+      "name_user": "Alvaro Garcia Barrera",
+      "password_user": "Ldts123$%",
+      "dni_user": "77851828W",
+      "email": "al.ga.ba.jjgg@gmail.com",
+      "address": "Calle Flor de Albahaca 5, Bloque 1, 1ºC",
+      "admin": true,
+      "id_club": 1
+    },
+    {
+      "id": "fe63",
+      "nick_user": "Secret_alvarl",
+      "name_user": "Alvaro Garcia Barrera",
+      "password_user": "Ldts123$%",
+      "email_user": "al.ga.ba.jjgg@gmail.com",
+      "address_user": "Calle Flor de Albahaca 5",
+      "dni_user": "77851828W",
+      "admin": false,
+      "id_club": null
+    },
+    {
+      "id": "7832",
+      "nick_user": "MarcosG43",
+      "name_user": "Marcos Gonzalez",
+      "password_user": "Pass1234@",
+      "dni_user": "12345678Z",
+      "email_user": "marcos.gonzalez@email.com",
+      "address_user": "Calle Larga 20",
+      "admin": false,
+      "id_club": 2
+    },
+    {
+      "id": "9832",
+      "nick_user": "JuanPZ98",
+      "name_user": "Juan Perez",
+      "password_user": "1234QWErty@",
+      "dni_user": "98765432X",
+      "email_user": "juan.perez@email.com",
+      "address_user": "Avda. San Juan 14",
+      "admin": false,
+      "id_club": null,
+      "email": "undefined",
+      "address": "undefined",
+      "dni": "98765432X"
+    },
+    {
+      "id": "9348",
+      "nick_user": "AnaM90",
+      "name_user": "Ana Martinez",
+      "password_user": "Ana1234@",
+      "dni_user": "34567890T",
+      "email_user": "ana.martinez@email.com",
+      "address_user": "Calle Nueva 5",
+      "admin": false,
+      "id_club": 3,
+      "email": "undefined",
+      "address": "undefined",
+      "dni": "34567890T"
+    },
+    {
+      "id": "5847",
+      "nick_user": "CarlosG78",
+      "name_user": "Carlos Garcia",
+      "password_user": "Carlos1234@",
+      "dni_user": "22334455Y",
+      "email_user": "carlos.garcia@email.com",
+      "address_user": "Calle Sol 8",
+      "admin": false,
+      "id_club": null
+    },
+    {
+      "id": "7642",
+      "nick_user": "LuisM56",
+      "name_user": "Luis Medina",
+      "password_user": "Luis456@",
+      "dni_user": "87654321X",
+      "email_user": "luis.medina@email.com",
+      "address_user": "Calle Luna 11",
+      "admin": false,
+      "id_club": null,
+      "email": "undefined",
+      "address": "undefined",
+      "dni": "87654321X"
+    }
+  ]
+}

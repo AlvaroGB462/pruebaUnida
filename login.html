@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login web</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="cl-icon/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="login-form" class="form">
+            <h1 class="title">Inicio</h1>
+            <div class="inp">
+                <input type="text" id="username" class="input" placeholder="usuario o email" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" id="password" class="input" placeholder="contraseña" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="button" class="submit" onclick="loginUsuario()">Iniciar sesión</button>
+            <p class="footer">¿No tienes cuenta? <a href="#" class="link">Por favor, Regístrate</a></p>   
+        </form>
+        <div class="banner">
+            <h1 class="wel_text">Bienvenid@</h1><br>
+            <p class="para"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>       
